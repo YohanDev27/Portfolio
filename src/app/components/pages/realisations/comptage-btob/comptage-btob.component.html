@@ -1,0 +1,215 @@
+<!-- Start Main Container Area -->
+<div class="main-container">
+    <aside id="placid-aside" class="placid-aside bg-0f1d22">
+        <div class="logo">
+            <a class="navbar-brand" routerLink="/home">
+                <span style="color:aliceblue">Kevin</span>
+                <span style="color:#c9ab81"> Brau</span>
+            </a>
+
+        </div>
+
+        <div class="d-table">
+            <div class="d-table-cell">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="/home">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/home#about">A propos de moi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/home#services">Compétences</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/home#portfolio">Réalisations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/home#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="aside-footer">
+            <a href="/home#contact" class="default-btn">Me contacter</a>
+        </div>
+
+        <div class="line"></div>
+    </aside>
+
+    <div id="main-content" class="main-content">
+
+        <div class="responsive-burger-menu">
+            <span class="top-bar"></span>
+            <span class="middle-bar"></span>
+            <span class="bottom-bar"></span>
+        </div>
+
+        <section class="blog-details-area ptb-90 bg-0f1d22">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-md-12 offset-lg-2">
+                        <div class="blog-details-desc">
+                            <div class="article-image">
+                                <img style="filter: brightness(0.9);*width: 78%;" src="assets/img/works/img1.jpg" alt="image">
+                            </div>
+
+                            <div class="article-content">
+
+                                <h2 style="color:white">Comptage-BTOB</h2>
+
+                                <p>Lors de mon stage de semestre 6 j’ai eu l’opportunité de travailler sur une application qui était importante pour <b>AgenceMD</b>. Auparavant le pôle marketing avait un ancien outil de comptage qui n’était plus à jour et
+                                    peu ergonomique mais permettait tout de même de réaliser des comptages. C’est pour cela que le « Comptage BTOB » est né, développer un outil plus ergonomique, rapide et à jour. Cette application web est développée en
+                                    PHP et JQuery. L’application BTOB a pour but de compter sur des sociétés actives de France.
+                                </p>
+
+                                <h3>Contexte</h3>
+
+                                <p>La société <b>AgenceMD</b> avait un besoin, <u>concurrencer efficacement ses concurrents et pouvoir se démarquer dans son activité</u>. C’est pour cela qu’elle a décidé de rénover son outil le plus important, l’outil de
+                                    comptage BTOB. Un comptage sur des sociétés peut se traduire par le fait qu’un client envoie une liste de critères afin de trouver des sociétés qui correspondent. Cela permettra au client de cibler les sociétés qu’il
+                                    souhaite pour communiquer.
+                                </p>
+
+                                <p>L’objectif du projet était de proposer aux utilisateurs un outil rapide, fiable et attrayant. Une rapidité dans l’affichage des résultats permet de se démarquer des outils concurrents puisque l’exécution d’un comptage peut
+                                    s’avérer long suivant les critères choisis. De plus, il est important de garder des données fiables et à jour pour garantir une confiance au prêt des utilisateurs. Pour rendre l’outil agréable à l’utilisation, AgenceMD
+                                    a choisi de porter une attention particulière à l’esthétique de l’application.
+                                </p>
+                                <p>Si ces objectifs n’étaient pas tenus nous ne pouvions pas nous démarquer par rapport à la forte concurrence à laquelle <b>AgenceMD</b> devait faire face.</p>
+
+                                <h3>Développement de l'application</h3>
+                                <p>Il faut savoir que l’application se découpe en plusieurs parties. J’étais chargé de développer la partie « Ville » de l’application. Le comptage de société sur des villes est un atout important pour l’outil puisqu’il permet
+                                    de rechercher une ou des villes selon votre choix. Il est possible de trouver une ville de deux façons, soit en entrant directement le code postal soit en entrant le nom de la commune.</p>
+
+                                <div class="services-details-image">
+                                    <img src="assets/img/realisation/recherche.png" alt="image">
+                                    <small style="color:white"><br><i style="font-size: 13px;">Exemple de zone de recherche</i></small>
+                                </div>
+                                <p>Pour obtenir de l’auto-complétion j’ai dû utiliser le plugin jQuery avec une variante « Monkey patching ». Le monkey patching permet de remplacer le comportement de jQuery. Il m’a été utile pour mettre en place l’auto-complétion
+                                    avec facilité et surtout pour créer le visuel de l’auto-complétion.</p>
+                                <p>En plus de ça, un appel Ajax est fait pour envoyer et récupérer les données de l’auto-complétion.</p>
+                                <div class="services-details-image">
+                                    <img src="assets/img/realisation/autocomplete1.png" alt="image">
+                                    <small style="color:white"><br><i style="font-size: 13px;">Exemple d'un appel AJAX</i></small>
+                                </div>
+                                <br/>
+                                <div class="services-details-image">
+                                    <img src="assets/img/realisation/autocomplete1.png" alt="image">
+                                    <small style="color:white"><br><i style="font-size: 13px;">Exemple de monkey patch autocomplete</i></small>
+                                </div>
+                                <p>Si l’autocomplétion ne ramène pas de résultat, l’application va alors écrire dynamiquement dans la zone de recherche qu’aucune ville n’est trouvée.</p>
+                                <p>Pour implémenter la recherche j’ai dû créer une procédure prenant en paramètre la saisie de l’utilisateur, le nombre limite de lignes remontées et la liste des départements cochés par l’utilisateur (évite de rechercher
+                                    une ville déjà comprise dans un département coché afin de ne pas causer de doublons).</p>
+                                <p>La procédure est découpée en deux parties, une qui gère les codes postaux et l’autre les noms de villes.</p>
+                                <p>La recherche se fait tout simplement avec un « <b>like</b> ». Un « <b>match against</b> » avait été envisagé mais les résultats n’étaient pas concluants.Une fois la ville correspondante trouvée, la procédure retourne le
+                                    résultat et l’envoi à l’application.</p>
+                                <p>Il faut savoir qu’il y a eu beaucoup d’interaction entre <b>Frederic Mouillet</b>, gérant d’AgenceMD et demandeur du projet, et moi-même pour ce qui est de la partie logique des recherches de villes. En plus de ça je communiquais
+                                    souvent avec la partie communication de la société pour ce qui est de l’esthétisme de l’application et notamment pour les zones de recherches.</p>
+
+                                <h3>Les données de comptage</h3>
+
+                                <p>Tout d’abord, il faut savoir que sur ce projet, j’ai principalement développé en base de données. On m’a attribué comme tâche de faire remonter les bons chiffres suivant les critères choisis.</p>
+                                <p>Avant de pouvoir ressortir des résultats il fallait donc réfléchir à l’architecture des tables qu’allait utiliser l’application.</p>
+                                <p>Pour ce faire j’ai dû distinguer deux points sur l’application. Le premier est le comptage sur les sociétés et le deuxième sur les contacts de ces sociétés.</p>
+                                <p>Donc deux tables ont été créées, « <b>socle société</b> » et « <b>socle contact</b> ». Pour les remplir deux procédures ont été développées. La première permettant de mettre à jour la table des sociétés et l’autre la table
+                                    des contacts. Toutes les données que j’ai rassemblées proviennent d’une table qui contient toutes les données sur une société et une autre sur les contacts.</p>
+                                <p>Mais l’application n’affiche pas simplement les données de deux tables, elle calcule en rapport à des critères choisis par l’utilisateur. Pour ce faire, plusieurs procédures ont été mises en place.</p>
+                                <p>Pour compter nous avons mis en place deux types de procédures. Le premier concerne les procédures « <b>appelantes</b> », qui vont appeler une autre procédure avec des paramètres bien définis. Le deuxième concerne la procédure
+                                    qui va gérer toutes les requêtes possibles faisables sur l’application.</p>
+                                <p>Ces procédures ont beaucoup de paramètres puisqu’elles sont appelées en notant tous les critères de comptage que l’utilisateur a réalisé. Une fois les paramètres remis en forme, ces procédures vont appeler une deuxième
+                                    procédure qui elle va gérer tous les cas possibles suivant l’appelant.</p>
+                                <p>Cette procédure se nomme : <u>thg_app_comptage_v1</u>. Son rôle est de sortir une requête suivant les différents paramètres insérés.</p>
+                                <p>Tous ces paramètres sont par défaut remplis à <u>'ALL'</u> disant qu’il n’y a pas de critère spécifique sur un paramètre.</p>
+
+                                <div class="services-details-image">
+                                    <img src="assets/img/realisation/thg.png" alt="image">
+                                    <small style="color:white"><br><i style="font-size: 13px;">Exemple d’un appel de procédure sans critère coché</i></small>
+                                </div>
+                                <p>Une fois exécutée cette procédure va retourner une requête que l’application devra lancer afin d’obtenir le résultat.</p>
+
+                                <div class="services-details-image">
+                                    <img src="assets/img/realisation/thg2.png" alt="image">
+                                    <small style="color:white"><br><i style="font-size: 13px;">Exemple de la requête exécutée par l’application</i></small>
+                                </div>
+                                <p>Le résultat associé à cette requête correspond au nombre de sociétés, contact et présence des canaux.</p>
+                                <div class="services-details-image">
+                                    <img src="assets/img/realisation/thg3.png" alt="image">
+                                    <small style="color:white"><br><i style="font-size: 13px;">Exemple de résultats</i></small>
+                                </div>
+                                <p>Il est important de noter qu’il y a eu beaucoup d’aller-retour entre mon maître de stage <b>Thierry Gérardin</b>, Ancien DBA chez <b>AgenceMD</b>, et moi-même pour ajuster au maximum les procédures dans le but de les rendre
+                                    les plus rapides possibles.</p>
+
+                                <h3>Timing serré</h3>
+                                <p>Pendant le développement de l’outil BTOB je devais faire face à un timing serré étant donné que mon stage ne durait que 6 mois. Je me suis donc créé un but personnel, terminer le développement du <b>Comptage BTOB</b> avant
+                                    la fin de mon stage. Pour ce faire, je ne devais <u>pas confondre vitesse et précipitation</u>.</p>
+                                <p>Pour bien gérer mon temps, j’ai mis en place un <u><a href="https://trello.com/fr">Trello</a></u> sur le projet pour que l’on puisse visionner les tâches restantes à réaliser et des tâches terminées. Cela a permis à l’équipe
+                                    d’avancer efficacement sur le développement de l’application.</p>
+
+                                <h3>Présentation du projet au pôle Marketing</h3>
+                                <p>Avant la fin de mon stage je devais présenter l’application au pôle Marketing de la société. Pour ce faire j’ai contacté ses différents membres sur Outlook pour créer une réunion via le planificateur de réunion. Lors de
+                                    cette réunion j’ai pu présenter avec l’aide de mes collègues l’application en détaillant toutes ses fonctionnalités. Il était important de leur montrer l’outil de comptage puisqu’ils seraient amenés à l’utiliser pour
+                                    conseiller les clients.</p>
+
+                                <h3>Les résultats</h3>
+                                <p>La réalisation de ce projet m’a permis de voir réellement l’atout des Frameworks en utilisant <b>JQuery</b> ce qui a grandement simplifié les tâches au niveau des recherches en auto-complétion. J’ai pu aussi élargir mon
+                                    panel de compétences en modélisation de base de données ainsi qu’en création de procédure SQL puisque j’ai eu la chance d’avoir le DBA d’<b>AgenceMD</b> à mes côtés pour perfectionner mes méthodes de travail.
+                                </p>
+                                <p>Le projet a bel et bien porté ses fruits puisqu’il est désormais en ligne et fonctionnel avec des données à jour. La partie communication de la société se sert désormais de l’application pour réaliser des comptages précis
+                                    à fournir pour les clients d’<b>AgenceMD</b>.</p>
+                                <p>Après avoir finalisé ce projet, <b>AgenceMD</b> a souhaité développer une nouvelle application de comptage mais cette fois-ci en BTOC (business to consumer). Pour ce faire la société à décider de reprendre la logique de
+                                    l’outil BTOB en y incorporant l’algorithme de comptage avec des jeux de données qui ne sont non plus des sociétés mais des personnes.</p>
+
+                                <h3>Mon auto critique</h3>
+                                <p>Lorsque je suis arrivé en stage à <b>AgenceMD</b> je n’avais pas forcément de connaissances concernant le monde du marketing. Après avoir réalisé plusieurs applications dont le Comptage BTOB j’ai pu acquérir de nombreuses
+                                    connaissances, notamment sur la création d’une société et de sa composition.</p>
+                                <p>En plus de ça j’ai pu développer mes compétences en bases de données et apporter ma réflexion sur l’algorithme actuel de comptage de l’outil BTOB.</p>
+                            </div>
+
+                            <div class="article-footer">
+                                <div class="article-tags">
+                                    <p style="font-size: 19px;">Compétences associées</p>
+
+                                    <a routerLink="/competences/base-de-donnees" style="color: #c9ab81;">Modélisation de base de données</a> /
+                                    <a routerLink="/competences/php" style="color: #c9ab81;">PHP</a> /
+                                    <a routerLink="/competences/framework" style="color: #c9ab81;">Utilisation de framework</a> /
+                                    <a routerLink="/competences/gestion-temps" style="color: #c9ab81;">Gestion du temps</a> /
+                                    <a routerLink="/competences/git" style="color: #c9ab81;">Git</a> /
+                                    <a routerLink="/competences/sites-web" style="color: #c9ab81;">Conception de sites Web</a> /
+                                    <a routerLink="/competences/reunion" style="color: #c9ab81;">Organisation et animation de réunion</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer-area">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="logo">
+                        <a routerLink="/home-seven">
+                            <img src="assets/img/logo.png" alt="image">
+                        </a>
+                    </div>
+
+                    <div class="footer-contact-info">
+                        <ul>
+                            <li><i class="ri-map-pin-line"></i> <a href="#" target="_blank">35 Rue de Marseille, 44800
+                                    Saint
+                                    Herblain</a></li>
+                            <li style="padding-right: 0;"><i class="ri-phone-line"></i> <a href="tel:+33778245715">07 78
+                                    24 57
+                                    15</a></li>
+                            <li style="padding-left: 35px;"><i class="ri-mail-line"></i> <a href="mailto:kevinbrau.pro@gmail.com">kevinbrau.pro@gmail.com</a></li>
+                        </ul>
+                    </div>
+
+                    <ul class="social">
+                        <li><a href="https://www.linkedin.com/in/kevin-brau-899a2617a/" target="_blank">Linkedin</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom-area">
+                <div class="container">
+                    <p>Copyright <i class="ri-copyright-line"></i>2021 Placid. All Rights Reserved by <a href="https://envytheme.com/" target="_blank">EnvyTheme</a></p>
+                </div>
+
+                <div class="line"></div>
+            </div>
+        </footer>
+    </div>
+</div>
+<!-- End Main Container Area -->

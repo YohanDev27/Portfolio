@@ -1,0 +1,195 @@
+<!-- Start Main Container Area -->
+<div class="main-container">
+    <aside id="placid-aside" class="placid-aside bg-0f1d22">
+        <div class="logo">
+            <a class="navbar-brand" routerLink="/home">
+                <span style="color:aliceblue">Kevin</span>
+                <span style="color:#c9ab81"> Brau</span>
+            </a>
+
+        </div>
+
+        <div class="d-table">
+            <div class="d-table-cell">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="/home">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/home#about">A propos de moi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/home#services">Compétences</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/home#portfolio">Réalisations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/home#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="aside-footer">
+            <a href="/home#contact" class="default-btn">Me contacter</a>
+        </div>
+
+        <div class="line"></div>
+    </aside>
+
+    <div id="main-content" class="main-content">
+
+        <div class="responsive-burger-menu">
+            <span class="top-bar"></span>
+            <span class="middle-bar"></span>
+            <span class="bottom-bar"></span>
+        </div>
+
+        <section class="blog-details-area ptb-90 bg-0f1d22">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-md-12 offset-lg-2">
+                        <div class="blog-details-desc">
+                            <div class="article-image">
+                                <img style="filter: brightness(0.9);" src="assets/img/competence/2nf_ea2.png" alt="image">
+                            </div>
+
+                            <div class="article-content">
+                                <div class="entry-meta">
+                                    <ul>
+                                        <li>
+                                            <i class="ri-folder-2-line"></i>
+                                            <span>Compétence</span>
+                                            <a href="/home#services">Technique</a>
+                                        </li>
+                                        <li>
+                                            <i class="ri-group-2-line"></i>
+                                            <span>Niveau d'expertise</span>
+                                            <a>Confirmé</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <br>
+                                <h2 style="color:white">Modélisation de base de données</h2>
+
+                                <p>La compétence « modélisation de base de données » s’apparente au fait de pouvoir réfléchir à la conception, créer et administrer des socles de données. Cette compétence donne la possibilité à l’utilisateur de pouvoir bénéficier
+                                    d’un stockage de ses données tout en ayant un schéma bien défini permettant une bonne organisation. Le choix d’une base de données est rudimentaire pour pérenniser son projet. Il existe différents types de base de données,
+                                    les plus connues sont les <u>bases de données relationnelles et les bases de données orientées documents (<a href="https://fr.wikipedia.org/wiki/NoSQL">NOSQL</a>).</u> Il y a plusieurs points qui les distinguent.</p>
+
+                                <p>Base de données relationnelles :</p>
+
+                                <ul class="features-list">
+                                    <li><i class="ri-check-double-fill"></i> Base de données utilisée principalement pour enregistrer et modifier des données structurées</li>
+                                    <li><i class="ri-check-double-fill"></i> Données facilement exploitables via des <a href="https://fr.wikipedia.org/wiki/Structured_Query_Language">requêtes SQL</a></li>
+                                    <li><i class="ri-check-double-fill"></i> La gestion des droits d’accès est facilement applicable</li>
+                                </ul>
+
+                                <p>Base de données orientées documents :</p>
+
+                                <ul class="features-list">
+                                    <li><i class="ri-check-double-fill"></i> Utilisée pour manipuler des données semi-structurées et non-structurées</li>
+                                    <li><i class="ri-check-double-fill"></i> Le type de données à implémenter ne nécessite pas d’avoir de type connu</li>
+                                    <li><i class="ri-check-double-fill"></i> Vitesse d’écriture rapide</li>
+                                    <li><i class="ri-check-double-fill"></i> Haute scalabilité</li>
+                                </ul>
+
+                                <p>La base de données est un élément important dans des projets professionnels. Elle permet aux entreprises de centraliser et partager leurs informations. En plus de ça, elle donne la possibilité aux utilisateurs d’accéder
+                                    aux données simultanément et rapidement. Nous pouvons prendre comme exemple <b>Facebook</b> qui stocke les informations des utilisateurs dans une base de données ce qui va permettre un accès aux données utilisateurs
+                                    rapides et fiables.</p>
+
+                                <h3>Mise en oeuvre</h3>
+                                <p>Lors de mon stage à <b>AgenceMD</b>, j’ai eu pour mission de gérer la création et la réflexion d’un socle de données.</p>
+
+                                <p><u>AgenceMD</u> avait pour but de créer une base de données regroupant toutes les informations concernant les sociétés ainsi que des données sur ses collaborateurs. L’enjeu était de réfléchir au schéma à adopter pour accueillir
+                                    au mieux les données. Cette base de données devait ensuite fournir les informations pour plusieurs applications.</p>
+
+                                <p>La difficulté de la mission était de construire tout une base de données avec des tables connectés entre elles. La base devait contenir un total de quatre tables, La table « contact » (contient toutes les informations liées
+                                    à un contact), la table « mobile », la table « email », la table « société » (contient les sociétés) et la table « fixe ».</p>
+
+                                <p>Pour ce faire j’ai décidé d’y aller par étapes pour faciliter la compréhension et avoir une idée claire de mon objectif.</p>
+
+                                <p>J’ai tout d’abord modélisé les différentes tables sur <b>MySQL Workbench</b>, un logiciel de gestion et d’administration de base de données. Cet outil donne la possibilité de créer un modèle conceptuel des données (MCD)
+                                    ce qui me permet de me rendre compte des différentes propriétés de mes futures tables ainsi que de leur lien (Foreign Key).</p>
+
+                                <div class="services-details-image">
+                                    <img src="assets/img/competence/bdd.png" alt="image">
+                                    <small style="color:white"><br><i style="font-size: 13px;">Exemple d’un schéma</i></small>
+                                </div>
+                                <p>Une fois le MCD validé par mon DBA, je me suis alors consacré à créer les tables dans la base de données. Suite à ça j’ai pu remplir les différentes tables avec leurs données correspondantes via la requête suivante : <u>LOAD
+                                    DATA INFILE 'data.txt' INTO TABLE canal_email;</u></p>
+
+                                <p>Une fois les données chargées, les applications ont commencé à consumer les données des tables mais un problème est vite survenu, <b>la lenteur</b>. En effet les tables comportaient énormément de données et ce qui causait
+                                    des lenteurs sur les applications, elles mettaient beaucoup de temps pour recevoir toutes les données.</p>
+
+                                <p>C’est alors que j’ai décidé de mettre en place des « index ». Les index permettent de simplifier et d’accélérer les opérations de recherche, de tri ou de jointure entre les tables. Dans mon cas pour simplifier la vitesse
+                                    de réception des données j’ai mis en place des index destinés aux colonnes de jointure.</p>
+                                <p>Suite à ça, les applications n’avaient plus de problème de lenteur et le schéma de base de données a été validé par le DBA.</p>
+
+                                <h3>Maitrise</h3>
+                                <p>Je pense savoir maîtriser la plupart des aspects de la base de données pour ce qui est de la réflexion, conception et mise en place de schéma. Le milieu professionnel dans lequel je me trouvais lors de mon stage m’a été
+                                    plus que formateur puisqu’il fallait récupérer des informations de l’<u><a href="https://www.insee.fr/fr/accueil">INSEE</a></u> et des fichiers de différents partenaires de la société <b>AgenceMD</b> pour ensuite créer
+                                    des schémas de base de données en conséquence.
+                                </p>
+                                <p>En plus de ça j’ai mis en place des procédures complexes permettant l’alimentation en données d’applications. </p>
+                                <p>Le fait de pratiquer régulièrement grâce aux tâches qui m’étaient confiées, m’a permis de monter en compétence rapidement.</p>
+                                <p>Lors de mon cursus scolaire j’ai appris les rudiments de la base de données. J’ai pu mettre en place des socles de données de plus en plus complexes durant les multiples projets réalisés. Une fois arrivé dans le monde professionnel
+                                    je me suis rendu compte de l’importance des bases de données. Elle est en effet la pièce maîtresse d’une bonne application puisque sans une base de données fiable nous ne pouvons pas avoir une application pérenne. </p>
+                                <p>Lors de mes différentes modélisations de base de données durant mon stage j’ai dû faire face à plusieurs problèmes, notamment sur la relation entre les différentes tables de ma base de données créées pour les diverses applications
+                                    d’
+                                    <b>AgenceMD</b>. Pour pallier à ça j’ai eu la chance d’avoir le soutien d’un expert en base de données qui a pu m’apprendre les bonnes pratiques à adopter pour réaliser un bon socle de données.</p>
+                                <p>Avec l’expérience que j’ai pu accumuler, je conseille aux débutants dans les bases de données de pratiquer le plus souvent possible. Cela va aider à comprendre le fonctionnement d’une base de données. En plus de ça, ils
+                                    vont acquérir une nouvelle façon d’appréhender un projet, c’est-à-dire, réfléchir la conception d’un projet suivant le schéma qu’ils voudront définir en base de données. Avec cette réflexion ils auront moins de problèmes
+                                    liés aux stockages de données ainsi qu’aux relations entre les différentes tables.</p>
+
+                                <h3>Évolution compétence</h3>
+                                <p>Je souhaite améliorer cette compétence au sein de mon entreprise actuelle pour pouvoir leur proposer des socles de données pertinents et optimisés. En plus de ça je suis amené à travailler régulièrement sur des bases de
+                                    données conséquentes qui sont en perpétuelle évolution tout comme mon savoir-faire. Je vais, dans un futur proche, suivre une formation sur la modélisation de base de données et sur les différentes façons de créer des
+                                    requêtes SQL via le site <b>Udemy</b>.
+                                </p>
+                                <p>Lien de la formation : <a href="https://www.udemy.com/course/advanced-tsql-querying-using-sql-2014/">Udemy</a></p>
+                            </div>
+
+                            <div class="article-footer">
+                                <div class="article-tags">
+                                    <p style="font-size: 19px;">Réalisations associées</p>
+
+                                    <a routerLink="/realisations/comptage-btob" style="color: #c9ab81;">Comptage BTOB</a> /
+                                    <a routerLink="/realisations/maestro" style="color: #c9ab81;">Maestro</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer-area">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="logo">
+                        <a routerLink="/home-seven">
+                            <img src="assets/img/logo.png" alt="image">
+                        </a>
+                    </div>
+
+                    <div class="footer-contact-info">
+                        <ul>
+                            <li><i class="ri-map-pin-line"></i> <a href="#" target="_blank">35 Rue de Marseille, 44800
+                                    Saint
+                                    Herblain</a></li>
+                            <li style="padding-right: 0;"><i class="ri-phone-line"></i> <a href="tel:+33778245715">07 78
+                                    24 57
+                                    15</a></li>
+                            <li style="padding-left: 35px;"><i class="ri-mail-line"></i> <a href="mailto:kevinbrau.pro@gmail.com">kevinbrau.pro@gmail.com</a></li>
+                        </ul>
+                    </div>
+
+                    <ul class="social">
+                        <li><a href="https://www.linkedin.com/in/kevin-brau-899a2617a/" target="_blank">Linkedin</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom-area">
+                <div class="container">
+                    <p>Copyright <i class="ri-copyright-line"></i>2021 Placid. All Rights Reserved by <a href="https://envytheme.com/" target="_blank">EnvyTheme</a></p>
+                </div>
+
+                <div class="line"></div>
+            </div>
+        </footer>
+    </div>
+</div>
+<!-- End Main Container Area -->
