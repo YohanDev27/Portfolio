@@ -19,7 +19,7 @@ declare let $: any;
 export class AppComponent implements OnInit {
     location: any;
     routerSubscription: any;
-    title = "Kevin Brau - Developper";
+    title = "Yohan Brau - Developper";
 
     constructor(private router: Router, private titleService: Title) {}
 

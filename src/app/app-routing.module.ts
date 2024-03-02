@@ -43,7 +43,7 @@ import { HomeFortyComponent } from './components/pages/template/home-forty/home-
 import { ServicesDetailsComponent } from './components/pages/services-details/services-details.component';
 import { WorksDetailsComponent } from './components/pages/works-details/works-details.component';
 import { BlogDetailsComponent } from './components/pages/blog-details/blog-details.component';
-import { BaseDeDonneesComponent } from './components/pages/competences/base-de-donnees/bdd.component';
+import { JavaComponent } from './components/pages/competences/java/java.component';
 import { CommunicationComponent } from './components/pages/competences/communication/communication.component';
 import { DocUtilisateurComponent } from './components/pages/competences/doc-utilisateur/doc-utilisateur.component';
 import { EspritEquipeComponent } from './components/pages/competences/esprit-equipe/esprit-equipe.component';
@@ -105,7 +105,7 @@ const routes: Routes = [
     {path: 'works-details', component: WorksDetailsComponent},
     {path: 'blog-details', component: BlogDetailsComponent},
     //Competences
-    {path: 'competences/base-de-donnees', component: BaseDeDonneesComponent},
+    {path: 'competences/java', component: JavaComponent},
     {path: 'competences/communication', component: CommunicationComponent},
     {path: 'competences/doc-utilisateur', component: DocUtilisateurComponent},
     {path: 'competences/esprit-equipe', component: EspritEquipeComponent},

@@ -1008,7 +1008,7 @@ Main Banner CSS
     ;
     &.banner-bg1 {
         background: {
-            image: url(assets/img/computer-1245714_1920.jpg);
+            color:  $black-color
         }
         ;
     }
@@ -1079,6 +1079,8 @@ Main Banner CSS
         ;
     }
 }
+
+
 
 .main-banner-content {
     text-align: center;

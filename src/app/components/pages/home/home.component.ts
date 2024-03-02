@@ -17,7 +17,7 @@ export class HomeSevenComponent implements OnInit {
     var email = (<HTMLInputElement>document.getElementById('email')).value;
     var message = (<HTMLInputElement>document.getElementById('message')).value;
 
-    document.location.href = "mailto:kevinbrau.pro@gmail.com?subject=Portfolio - Kevin Brau"
+    document.location.href = "mailto:Yohanbrau.pro@gmail.com?subject=Portfolio - Yohan Brau"
     + "&body=" + encodeURIComponent(message)+" sended by "+encodeURIComponent(email);
   }
 }

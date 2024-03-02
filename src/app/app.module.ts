@@ -50,7 +50,7 @@ import { BlogDetailsComponent } from './components/pages/blog-details/blog-detai
 import { WorksDetailsComponent } from './components/pages/works-details/works-details.component';
 import { ServicesDetailsComponent } from './components/pages/services-details/services-details.component';
 import { DemoSidebarComponent } from './components/layouts/demo-sidebar/demo-sidebar.component';
-import { BaseDeDonneesComponent } from './components/pages/competences/base-de-donnees/bdd.component';
+import {JavaComponent } from './components/pages/competences/java/java.component';
 import { FrameworkComponent } from './components/pages/competences/framework/framework.component';
 import { PhpComponent } from './components/pages/competences/php/php.component';
 import { SitesWebComponent } from './components/pages/competences/sites-web/sites-web.component';
@@ -114,7 +114,7 @@ import { MaestroComponent } from './components/pages/realisations/maestro/maestr
         WorksDetailsComponent,
         ServicesDetailsComponent,
         DemoSidebarComponent,
-        BaseDeDonneesComponent,
+        JavaComponent,
         FrameworkComponent,
         PhpComponent,
         SitesWebComponent,
