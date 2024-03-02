@@ -111,10 +111,11 @@
     transition: all 0.33s ease-out 0s
 }
 
-.main-timeline .date-outer.Capgemini:before,
-.main-timeline .date-outer.Capgemini:after {
+
+.main-timeline .date-outer.CGI:before,
+.main-timeline .date-outer.CGI:after {
     content: "";
-    background-image: url("../../../../assets/img/timeline/channels4_profile.jpg");
+    background-image: url("../../../../assets/img/timeline/cgi.png");
     background-size: cover;
     width: 125px;
     height: 125px;
