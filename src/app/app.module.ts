@@ -50,21 +50,27 @@ import { BlogDetailsComponent } from './components/pages/blog-details/blog-detai
 import { WorksDetailsComponent } from './components/pages/works-details/works-details.component';
 import { ServicesDetailsComponent } from './components/pages/services-details/services-details.component';
 import { DemoSidebarComponent } from './components/layouts/demo-sidebar/demo-sidebar.component';
-import { BaseDeDonneesComponent } from './components/pages/competences/base-de-donnees/bdd.component';
+import {JavaComponent } from './components/pages/competences/java/java.component';
+<<<<<<< Updated upstream
 import { FrameworkComponent } from './components/pages/competences/framework/framework.component';
 import { PhpComponent } from './components/pages/competences/php/php.component';
 import { SitesWebComponent } from './components/pages/competences/sites-web/sites-web.component';
+=======
+import { CobolComponent } from './components/pages/competences/cobol/cobol.component';
+import { ReactNativeComponent } from './components/pages/competences/react_native/react-native.component';
+>>>>>>> Stashed changes
 import { GitComponent } from './components/pages/competences/git/git.component';
-import { EspritEquipeComponent } from './components/pages/competences/esprit-equipe/esprit-equipe.component';
-import { GestionTempsComponent } from './components/pages/competences/gestion-temps/gestion-temps.component';
-import { DocUtilisateurComponent } from './components/pages/competences/doc-utilisateur/doc-utilisateur.component';
-import { CommunicationComponent } from './components/pages/competences/communication/communication.component';
-import { ReunionComponent } from './components/pages/competences/reunion/reunion.component';
-import { ComptageBtobComponent } from './components/pages/realisations/comptage-btob/comptage-btob.component';
-import { EPopComponent } from './components/pages/realisations/e-pop/e-pop.component';
+import { TravailEquipeComponent } from './components/pages/competences/travail_equipe/travail-equipe.component';
+import { AutonomieComponent } from './components/pages/competences/autonomie/autonomie.component';
+import { GestionEvenementComponent } from './components/pages/competences/gestion-evenement/gestion-evenement.component';
+import { GestionProjetComponent } from './components/pages/competences/gestion_projet/gestionProjet.component';
+import { VeilleComponent } from './components/pages/competences/veille/veille.component';
+import { TenueCompteComponent } from './components/pages/realisations/tenue_compte/tenue-compte.component';
+import { GecoComponent } from './components/pages/realisations/geco/geco.component';
 import { BudJetComponent } from './components/pages/realisations/bud-jet/bud-jet.component';
 import { FastComponent } from './components/pages/realisations/fast/fast.component';
 import { MaestroComponent } from './components/pages/realisations/maestro/maestro.component';
+import { BddComponent } from './components/pages/competences/bdd/bdd.component';
 
 @NgModule({
     declarations: [
@@ -114,18 +120,24 @@ import { MaestroComponent } from './components/pages/realisations/maestro/maestr
         WorksDetailsComponent,
         ServicesDetailsComponent,
         DemoSidebarComponent,
-        BaseDeDonneesComponent,
+        JavaComponent,
+<<<<<<< Updated upstream
         FrameworkComponent,
         PhpComponent,
         SitesWebComponent,
+=======
+        CobolComponent,
+        ReactNativeComponent,
+        BddComponent,
+>>>>>>> Stashed changes
         GitComponent,
-        EspritEquipeComponent,
-        GestionTempsComponent,
-        DocUtilisateurComponent,
-        CommunicationComponent,
-        ReunionComponent,
-        ComptageBtobComponent,
-        EPopComponent,
+        TravailEquipeComponent,
+        AutonomieComponent,
+        GestionEvenementComponent,
+        GestionProjetComponent,
+        VeilleComponent,
+        TenueCompteComponent,
+        GecoComponent,
         BudJetComponent,
         FastComponent,
         MaestroComponent

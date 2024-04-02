@@ -43,21 +43,29 @@ import { HomeFortyComponent } from './components/pages/template/home-forty/home-
 import { ServicesDetailsComponent } from './components/pages/services-details/services-details.component';
 import { WorksDetailsComponent } from './components/pages/works-details/works-details.component';
 import { BlogDetailsComponent } from './components/pages/blog-details/blog-details.component';
-import { BaseDeDonneesComponent } from './components/pages/competences/base-de-donnees/bdd.component';
+import { JavaComponent } from './components/pages/competences/java/java.component';
+<<<<<<< Updated upstream
 import { CommunicationComponent } from './components/pages/competences/communication/communication.component';
 import { DocUtilisateurComponent } from './components/pages/competences/doc-utilisateur/doc-utilisateur.component';
 import { EspritEquipeComponent } from './components/pages/competences/esprit-equipe/esprit-equipe.component';
 import { FrameworkComponent } from './components/pages/competences/framework/framework.component';
 import { GestionTempsComponent } from './components/pages/competences/gestion-temps/gestion-temps.component';
+=======
+import { GestionProjetComponent } from './components/pages/competences/gestion_projet/gestionProjet.component';
+import { GestionEvenementComponent } from './components/pages/competences/gestion-evenement/gestion-evenement.component';
+import { TravailEquipeComponent } from './components/pages/competences/travail_equipe/travail-equipe.component';
+import { CobolComponent } from './components/pages/competences/cobol/cobol.component';
+import { AutonomieComponent } from './components/pages/competences/autonomie/autonomie.component';
+>>>>>>> Stashed changes
 import { GitComponent } from './components/pages/competences/git/git.component';
-import { PhpComponent } from './components/pages/competences/php/php.component';
-import { ReunionComponent } from './components/pages/competences/reunion/reunion.component';
-import { SitesWebComponent } from './components/pages/competences/sites-web/sites-web.component';
-import { ComptageBtobComponent } from './components/pages/realisations/comptage-btob/comptage-btob.component';
+import { ReactNativeComponent } from './components/pages/competences/react_native/react-native.component';
+import { VeilleComponent } from './components/pages/competences/veille/veille.component';
+import { TenueCompteComponent } from './components/pages/realisations/tenue_compte/tenue-compte.component';
 import { BudJetComponent } from './components/pages/realisations/bud-jet/bud-jet.component';
-import { EPopComponent } from './components/pages/realisations/e-pop/e-pop.component';
+import { GecoComponent } from './components/pages/realisations/geco/geco.component';
 import { FastComponent } from './components/pages/realisations/fast/fast.component';
 import { MaestroComponent } from './components/pages/realisations/maestro/maestro.component';
+import { BddComponent } from './components/pages/competences/bdd/bdd.component';
 
 const routes: Routes = [
     {path: 'home', component: HomeSevenComponent},
@@ -105,26 +113,34 @@ const routes: Routes = [
     {path: 'works-details', component: WorksDetailsComponent},
     {path: 'blog-details', component: BlogDetailsComponent},
     //Competences
-    {path: 'competences/base-de-donnees', component: BaseDeDonneesComponent},
+    {path: 'competences/java', component: JavaComponent},
+<<<<<<< Updated upstream
     {path: 'competences/communication', component: CommunicationComponent},
     {path: 'competences/doc-utilisateur', component: DocUtilisateurComponent},
     {path: 'competences/esprit-equipe', component: EspritEquipeComponent},
     {path: 'competences/framework', component: FrameworkComponent},
     {path: 'competences/gestion-temps', component: GestionTempsComponent},
+=======
+    {path: 'competences/gestion-projet', component: GestionProjetComponent},
+    {path: 'competences/gestion-evenement', component: GestionEvenementComponent},
+    {path: 'competences/tavail-en-equipe', component: TravailEquipeComponent},
+    {path: 'competences/cobol', component: CobolComponent},
+    {path: 'competences/autonomie', component: AutonomieComponent},
+>>>>>>> Stashed changes
     {path: 'competences/git', component: GitComponent},
-    {path: 'competences/php', component: PhpComponent},
-    {path: 'competences/reunion', component: ReunionComponent},
-    {path: 'competences/sites-web', component: SitesWebComponent},
+    {path: 'competences/react-native', component: ReactNativeComponent},
+    {path: 'competences/veille', component: VeilleComponent},
+    {path: 'realisations/bdd', component: BddComponent},
     //Realisations
-    {path: 'realisations/comptage-btob', component: ComptageBtobComponent},
+    {path: 'realisations/tenue-de-compte', component: TenueCompteComponent},
     {path: 'realisations/bud-jet', component: BudJetComponent},
-    {path: 'realisations/e-pop', component: EPopComponent},
+    {path: 'realisations/geco', component: GecoComponent},
     {path: 'realisations/fast', component: FastComponent},
     {path: 'realisations/maestro', component: MaestroComponent},
 ];
 
 @NgModule({
-    imports: [RouterModule.forRoot(routes, { relativeLinkResolution: 'legacy' })],
+    imports: [RouterModule.forRoot(routes)],
     exports: [RouterModule]
 })
 export class AppRoutingModule { }
