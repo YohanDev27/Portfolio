@@ -51,14 +51,11 @@ import { WorksDetailsComponent } from './components/pages/works-details/works-de
 import { ServicesDetailsComponent } from './components/pages/services-details/services-details.component';
 import { DemoSidebarComponent } from './components/layouts/demo-sidebar/demo-sidebar.component';
 import {JavaComponent } from './components/pages/competences/java/java.component';
-<<<<<<< Updated upstream
 import { FrameworkComponent } from './components/pages/competences/framework/framework.component';
 import { PhpComponent } from './components/pages/competences/php/php.component';
 import { SitesWebComponent } from './components/pages/competences/sites-web/sites-web.component';
-=======
 import { CobolComponent } from './components/pages/competences/cobol/cobol.component';
 import { ReactNativeComponent } from './components/pages/competences/react_native/react-native.component';
->>>>>>> Stashed changes
 import { GitComponent } from './components/pages/competences/git/git.component';
 import { TravailEquipeComponent } from './components/pages/competences/travail_equipe/travail-equipe.component';
 import { AutonomieComponent } from './components/pages/competences/autonomie/autonomie.component';
@@ -121,15 +118,12 @@ import { BddComponent } from './components/pages/competences/bdd/bdd.component';
         ServicesDetailsComponent,
         DemoSidebarComponent,
         JavaComponent,
-<<<<<<< Updated upstream
         FrameworkComponent,
         PhpComponent,
         SitesWebComponent,
-=======
         CobolComponent,
         ReactNativeComponent,
         BddComponent,
->>>>>>> Stashed changes
         GitComponent,
         TravailEquipeComponent,
         AutonomieComponent,

@@ -44,19 +44,11 @@ import { ServicesDetailsComponent } from './components/pages/services-details/se
 import { WorksDetailsComponent } from './components/pages/works-details/works-details.component';
 import { BlogDetailsComponent } from './components/pages/blog-details/blog-details.component';
 import { JavaComponent } from './components/pages/competences/java/java.component';
-<<<<<<< Updated upstream
-import { CommunicationComponent } from './components/pages/competences/communication/communication.component';
-import { DocUtilisateurComponent } from './components/pages/competences/doc-utilisateur/doc-utilisateur.component';
-import { EspritEquipeComponent } from './components/pages/competences/esprit-equipe/esprit-equipe.component';
-import { FrameworkComponent } from './components/pages/competences/framework/framework.component';
-import { GestionTempsComponent } from './components/pages/competences/gestion-temps/gestion-temps.component';
-=======
 import { GestionProjetComponent } from './components/pages/competences/gestion_projet/gestionProjet.component';
 import { GestionEvenementComponent } from './components/pages/competences/gestion-evenement/gestion-evenement.component';
 import { TravailEquipeComponent } from './components/pages/competences/travail_equipe/travail-equipe.component';
 import { CobolComponent } from './components/pages/competences/cobol/cobol.component';
 import { AutonomieComponent } from './components/pages/competences/autonomie/autonomie.component';
->>>>>>> Stashed changes
 import { GitComponent } from './components/pages/competences/git/git.component';
 import { ReactNativeComponent } from './components/pages/competences/react_native/react-native.component';
 import { VeilleComponent } from './components/pages/competences/veille/veille.component';
@@ -114,19 +106,11 @@ const routes: Routes = [
     {path: 'blog-details', component: BlogDetailsComponent},
     //Competences
     {path: 'competences/java', component: JavaComponent},
-<<<<<<< Updated upstream
-    {path: 'competences/communication', component: CommunicationComponent},
-    {path: 'competences/doc-utilisateur', component: DocUtilisateurComponent},
-    {path: 'competences/esprit-equipe', component: EspritEquipeComponent},
-    {path: 'competences/framework', component: FrameworkComponent},
-    {path: 'competences/gestion-temps', component: GestionTempsComponent},
-=======
     {path: 'competences/gestion-projet', component: GestionProjetComponent},
     {path: 'competences/gestion-evenement', component: GestionEvenementComponent},
     {path: 'competences/tavail-en-equipe', component: TravailEquipeComponent},
     {path: 'competences/cobol', component: CobolComponent},
     {path: 'competences/autonomie', component: AutonomieComponent},
->>>>>>> Stashed changes
     {path: 'competences/git', component: GitComponent},
     {path: 'competences/react-native', component: ReactNativeComponent},
     {path: 'competences/veille', component: VeilleComponent},
