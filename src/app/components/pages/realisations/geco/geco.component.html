@@ -1,0 +1,169 @@
+<!-- Start Main Container Area -->
+<div class="main-container">
+    <aside id="placid-aside" class="placid-aside bg-0f1d22">
+        <div class="logo">
+            <a class="navbar-brand" routerLink="/home">
+                <span style="color:aliceblue">Yohan</span>
+                <span style="color:#c9ab81"> Brau</span>
+            </a>
+
+        </div>
+
+        <div class="d-table">
+            <div class="d-table-cell">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="/home">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/home#about">A propos de moi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/home#services">Compétences</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/home#portfolio">Réalisations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/home#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="aside-footer">
+            <a href="/home#contact" class="default-btn">Me contacter</a>
+        </div>
+
+        <div class="line"></div>
+    </aside>
+
+    <div id="main-content" class="main-content">
+
+        <div class="responsive-burger-menu">
+            <span class="top-bar"></span>
+            <span class="middle-bar"></span>
+            <span class="bottom-bar"></span>
+        </div>
+
+        <section class="blog-details-area ptb-90 bg-0f1d22">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-md-12 offset-lg-2">
+                        <div class="blog-details-desc">
+                            <div class="article-image">
+                                <img style="filter: brightness(0.9);*width: 78%;" src="assets/img/works/img1.jpg" alt="image">
+                            </div>
+
+                            <div class="article-content">
+
+                                <h2 style="color:white">GECO</h2>
+
+                                <p>Lors de mon alternance, j’ai eu l’opportunité de travailler à CGI au sein de l'équipe GECO, fraîchement créée en août 2023, qui travaille en collaboration avec une banque cliente. Notre mission principale consistait à trier les créances en fonction de leur priorité et à les échanger contre des biens de la Banque de France. La notation des créances dépend de leur importance en termes de prix et de leur niveau de confiance. Ce projet a été réalisé en java spring pour ce qui est du backend et en angular pour la partie front.
+                                </p>
+                               
+                                <h3>Contexte</h3>
+
+                                <p>En août 2023, au cœur de ma période d'alternance, j'ai eu l'honneur d'être intégré à l'équipe GECO au sein de CGI, une initiative récemment lancée en réponse à un besoin spécifique d'une banque cliente. Ce projet ambitieux avait pour mission de trier et de prioriser les créances avant de les échanger contre des actifs auprès de la Banque de France, un processus stratégique visant à renforcer la sécurité financière de la banque face à d'éventuelles situations de faillite.
+                                </p>
+                                <p>La finalité de ce projet, d'une importance capitale pour notre client, était de mettre en œuvre une solution opérationnelle sous six mois.</p>
+                        
+
+
+                                <h3>Architecture de l’application </h3>
+                                <p>L'architecture de notre application est conçue autour de trois API principales, chacune ayant un rôle spécifique dans le traitement et la gestion des créances.</p>
+                               
+                                <ul class="features-list">
+                                    <li><i class="ri-check-double-fill"></i> API RV3 : Cette API est dédiée au traitement quotidien des lots (batch), insérant les données traitées dans une table nommée RV3. Son rôle est crucial pour la préparation initiale des données en vue de leur traitement ultérieur.</li>
+                                    <li><i class="ri-check-double-fill"></i> API RV5 : Le cœur de notre système, RV5, prend en charge le traitement avancé des données. Elle traite la table de prétraitement (preprocessing) pour appliquer des règles d'éligibilité, effectue diverses insertions dans d'autres tables, et gère les créances erronées en les insérant dans des tables d'audit. Ces tables d'audit enregistrent les créances avec une description de l'erreur, ainsi que l'heure et la date de leur ajout. L'objectif principal de RV5 est de filtrer les meilleures créances et de les classer par ordre décroissant dans une table nommée « preconisation ». </li>
+                                    <li><i class="ri-check-double-fill"></i> API RV2 : Cette API fonctionne comme un pont vers le backend, en particulier l'API RV5, pour récupérer des informations spécifiques selon les besoins. Elle permet d'afficher les créances sur les interfaces homme-machine (IHM) du côté frontend, offrant ainsi aux clients la possibilité de manipuler l'application.</li>
+                                    
+                                    </ul>
+                                    <h3>Développement de l'application </h3>
+
+                               <P>Au cours des 6 mois passés sur ce projet, j'ai principalement contribué aux API RV5 et RV2. Mon travail sur RV5 a été particulièrement significatif, puisque j'ai pris en charge le développement des services relatifs aux règles d'éligibilité.
+                                Dans le cadre de mon travail sur l'API RV5, j'ai conçu et développé deux services clés qui jouent un rôle central dans l'évaluation et la gestion des créances, en assurant leur conformité aux critères d'éligibilité établis.
+                                </P>
+                               
+                               <p>Le premier service commence par examiner minutieusement chaque créance dans la table de préconisation pour s'assurer que tous les champs requis sont remplis, excluant ainsi toute donnée incomplète dès le début du processus. Cette vérification préliminaire est cruciale pour maintenir l'intégrité des données traitées.</p>
+                               
+                               <p>Si une créance passe avec succès la première étape de vérification, elle est alors soumise à un processus de validation approfondi. Durant cette phase, le service évalue la conformité de la créance aux critères d'éligibilité spécifiques, en s'appuyant sur les données contenues dans les tables d'exclusion et de présence d'éligibilité. Cette évaluation rigoureuse permet de déterminer si une créance est apte à être mobilisée. Une créance validée comme éligible est marquée par un retour positif (true), signifiant son acceptation pour la mobilisation.</p>
+                               <p>Le second service traite les résultats fournis par le service de vérification et de validation, en prenant en charge la liste des préconisations ainsi que les informations issues des tables d'exclusion et de présence. Selon le résultat (true ou false)</p>
+                               <p>En cas de succès (true) : </p>
+                               
+                               <ul class="features-list">
+                                <li><i class="ri-check-double-fill"></i>: La créance est mobilisée, marquant son éligibilité et son intégration effective dans le processus financier envisagé.</li>
+                               
+
+                                </ul>
+                                <p>En cas d'échec (false) : </p>
+                               
+                                <ul class="features-list">
+                                    <li><i class="ri-check-double-fill"></i>: Le système procède à l'enregistrement de l'erreur identifiée, ajoute l'entrée correspondante à la table d'audit pour documentation et transparence, et supprime la ligne concernée de la table de préconisation pour éviter toute contamination du processus de sélection des créances éligibles.</li>
+                                   
+    
+                                    </ul>
+                               <p>Ces deux services, par leur fonctionnement complémentaire, assurent une gestion efficace et précise des créances, en filtrant rigoureusement les données pour ne retenir que celles répondant intégralement aux critères d'éligibilité. Cette approche systématique non seulement optimise le processus de sélection des créances mais renforce également la fiabilité et la sécurité du système de gestion des créances dans son ensemble.</p>
+                               
+                               <p>Face à l'échéance de six mois pour le développement de l'application, j'ai rapidement identifié la nécessité d'une gestion du temps et de la qualité à la fois rigoureuse et efficace. Mon objectif personnel était de terminer avec diligence chaque tâche attribuée, en veillant à ne pas confondre rapidité d'exécution et précipitation. Cette distinction subtile a guidé mon approche tout au long du projet, me permettant de rester concentré sur la qualité tout en avançant rapidement.</p>
+                               <h3>Timing serré</h3>
+                               <P>Pour naviguer à travers les défis d'un calendrier serré, j'ai pris l'initiative d'introduire un outil de suivi de projet, spécifiquement Jira, au sein de notre équipe. Cela a été un véritable tournant dans notre manière de travailler. Jira nous a offert une visibilité claire sur l'avancement des tâches, distinguant celles qui étaient en cours de celles déjà achevées. Cette transparence a grandement contribué à l'efficacité de l'équipe, en permettant à chacun de connaître précisément ses responsabilités et les délais associés.</P>
+                               <P>L'adoption de cet outil a permis une meilleure organisation du travail et une progression plus fluide vers nos objectifs. Il a facilité la coordination entre les membres de l'équipe, assurant que nous restions sur la bonne voie malgré la pression du temps. Grâce à cette stratégie, nous avons maintenu un rythme de travail soutenu, essentiel pour respecter les délais du projet sans compromettre la qualité de notre livrable.</P>
+                               <P>Cette expérience a renforcé ma conviction que l'équilibre entre vitesse et qualité est crucial dans le développement logiciel, et que l'adoption d'outils et méthodes de gestion de projet adaptés est fondamentale pour atteindre cet équilibre, surtout sous contrainte de temps.</P>
+                               <h3>Les résultats</h3>
+                               <p>La finalisation de ce projet a été une révélation en termes de développement logiciel, marquant une étape significative dans mon parcours professionnel. L'expérience acquise, en particulier l'utilisation intensive de la programmation fonctionnelle avec les "stream" en Java, a été une découverte illuminante. Cette approche a non seulement enrichi ma compréhension de concepts avancés mais a également démontré son efficacité en rendant l'application plus robuste et résiliente face aux bugs, un avantage indéniable de la programmation fonctionnelle que j'ai pu expérimenter de première main.</p>
+                               <p>Le projet m'a également permis d'enrichir mon répertoire technique, avec un accent particulier sur la modélisation de bases de données et le développement de procédures SQL. Ces compétences, fondamentales dans le domaine du développement logiciel, ont été complétées par l'expérience valorisante de concevoir une API from scratch, renforçant ainsi ma compréhension et ma maîtrise du développement backend.</p>
+                               <p>La collaboration avec le tech lead a été une opportunité d'apprentissage inestimable, affinant mes compétences algorithmiques et peaufinant mes méthodes de travail. Ce mentorat a joué un rôle clé dans l'amélioration de la performance de l'application, me permettant de contribuer de manière significative à sa qualité et à sa fiabilité.</p>
+                               <p>Alors que le projet est toujours en phase de finalisation, avec désormais une équipe réduite à deux personnes travaillant à temps plein, les retours du client ont été extrêmement positifs. La satisfaction exprimée concernant l'efficacité de l'équipe à répondre aux besoins spécifiques du projet, ainsi que le respect des délais impartis, témoigne de la réussite de notre démarche et de notre engagement envers la qualité du travail fourni.</p>
+                               <p>Cette expérience a non seulement consolidé mes compétences techniques mais a aussi renforcé ma conviction de l'importance d'une collaboration étroite au sein des équipes de développement. La capacité à s'adapter aux exigences changeantes tout en maintenant un haut standard de qualité sous pression est une compétence que je chérirai et emporterai avec moi dans mes futurs projets.</p>
+                             <h3>Auto critque</h3>
+                              <p>Conscient de mes compétences initiales dans le domaine financier, bien qu'elles n'étaient pas très approfondies, mon intégration dans le projet GECO a marqué le début d'un enrichissement significatif de mes connaissances. En travaillant sur les différentes API de l'application, j'ai non seulement approfondi ma compréhension de sa structure mais j'ai également eu l'occasion de développer mes compétences en bases de données. De plus, cela m'a permis d'apporter ma réflexion et de contribuer à l'évolution de l'algorithme de comptage actuel de l'application.</p>
+                            </div>
+
+                            <div class="article-footer">
+                                <div class="article-tags">
+                                    <p style="font-size: 19px;">Compétences associées</p>
+
+                                    <a routerLink="/competences/java" style="color: #c9ab81;">Java</a> /
+                                    <a routerLink="/competences/tavail-en-equipe" style="color: #c9ab81;">Travail en équipe</a> /
+                                    <a routerLink="/competences/gestion-projet" style="color: #c9ab81;">Gestion de projet</a> /
+                                    <a routerLink="/competences/veille" style="color: #c9ab81;">Veille technologique</a> /
+                                    <a routerLink="/realisations/bdd" style="color: #c9ab81;">Base de donnée</a> /
+                                    <a routerLink="/competences/git" style="color: #c9ab81;">Git</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer-area">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="logo">
+                        <a routerLink="/home-seven">
+                            <img src="assets/img/logo.png" alt="image">
+                        </a>
+                    </div>
+
+                    <div class="footer-contact-info">
+                        <ul>
+                            <li><i class="ri-map-pin-line"></i> <a href="#" target="_blank">35 Rue de Marseille, 44800
+                                    Saint
+                                    Herblain</a></li>
+                            <li style="padding-right: 0;"><i class="ri-phone-line"></i> <a href="tel:+33778245715">07 78
+                                    24 57
+                                    15</a></li>
+                            <li style="padding-left: 35px;"><i class="ri-mail-line"></i> <a href="mailto:Yohanbrau.pro@gmail.com">Yohanbrau.pro@gmail.com</a></li>
+                        </ul>
+                    </div>
+
+                    <ul class="social">
+                        <li><a href="https://www.linkedin.com/in/Yohan-brau-899a2617a/" target="_blank">Linkedin</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom-area">
+                <div class="container">
+                    <p>Copyright <i class="ri-copyright-line"></i>2021 Placid. All Rights Reserved by <a href="https://envytheme.com/" target="_blank">EnvyTheme</a></p>
+                </div>
+
+                <div class="line"></div>
+            </div>
+        </footer>
+    </div>
+</div>
+<!-- End Main Container Area -->
