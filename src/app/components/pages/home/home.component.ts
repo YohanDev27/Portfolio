@@ -20,4 +20,6 @@ export class HomeSevenComponent implements OnInit {
     document.location.href = "mailto:Yohanbrau.pro@gmail.com?subject=Portfolio - Yohan Brau"
     + "&body=" + encodeURIComponent(message)+" sended by "+encodeURIComponent(email);
   }
+
+  
 }
