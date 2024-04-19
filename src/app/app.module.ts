@@ -65,9 +65,10 @@ import { VeilleComponent } from './components/pages/competences/veille/veille.co
 import { TenueCompteComponent } from './components/pages/realisations/tenue_compte/tenue-compte.component';
 import { GecoComponent } from './components/pages/realisations/geco/geco.component';
 import { BudJetComponent } from './components/pages/realisations/bud-jet/bud-jet.component';
-import { FastComponent } from './components/pages/realisations/fast/fast.component';
-import { MaestroComponent } from './components/pages/realisations/maestro/maestro.component';
+import { InovComponent } from './components/pages/realisations/inov/inov.component';
 import { BddComponent } from './components/pages/competences/bdd/bdd.component';
+import { MatmoicaComponent } from './components/pages/realisations/matmoica/matmoica.component';
+import { CinetechComponent } from './components/pages/realisations/cinetech/cinetech.component';
 
 @NgModule({
     declarations: [
@@ -133,8 +134,9 @@ import { BddComponent } from './components/pages/competences/bdd/bdd.component';
         TenueCompteComponent,
         GecoComponent,
         BudJetComponent,
-        FastComponent,
-        MaestroComponent
+        InovComponent,
+        MatmoicaComponent,
+        CinetechComponent
     ],
     imports: [
         BrowserModule,
