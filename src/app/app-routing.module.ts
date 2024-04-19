@@ -53,11 +53,11 @@ import { GitComponent } from './components/pages/competences/git/git.component';
 import { ReactNativeComponent } from './components/pages/competences/react_native/react-native.component';
 import { VeilleComponent } from './components/pages/competences/veille/veille.component';
 import { TenueCompteComponent } from './components/pages/realisations/tenue_compte/tenue-compte.component';
-import { BudJetComponent } from './components/pages/realisations/bud-jet/bud-jet.component';
 import { GecoComponent } from './components/pages/realisations/geco/geco.component';
-import { FastComponent } from './components/pages/realisations/fast/fast.component';
-import { MaestroComponent } from './components/pages/realisations/maestro/maestro.component';
 import { BddComponent } from './components/pages/competences/bdd/bdd.component';
+import { InovComponent } from './components/pages/realisations/inov/inov.component';
+import { MatmoicaComponent } from './components/pages/realisations/matmoica/matmoica.component';
+import { CinetechComponent } from './components/pages/realisations/cinetech/cinetech.component';
 
 const routes: Routes = [
     {path: 'home', component: HomeSevenComponent},
@@ -114,13 +114,13 @@ const routes: Routes = [
     {path: 'competences/git', component: GitComponent},
     {path: 'competences/react-native', component: ReactNativeComponent},
     {path: 'competences/veille', component: VeilleComponent},
-    {path: 'realisations/bdd', component: BddComponent},
+    {path: 'competences/bdd', component: BddComponent},
     //Realisations
     {path: 'realisations/tenue-de-compte', component: TenueCompteComponent},
-    {path: 'realisations/bud-jet', component: BudJetComponent},
     {path: 'realisations/geco', component: GecoComponent},
-    {path: 'realisations/fast', component: FastComponent},
-    {path: 'realisations/maestro', component: MaestroComponent},
+    {path: 'realisations/inov', component: InovComponent},
+    {path: 'realisations/mat-moi-ça', component: MatmoicaComponent},
+    {path: 'realisations/cinetech', component: CinetechComponent},
 ];
 
 @NgModule({
