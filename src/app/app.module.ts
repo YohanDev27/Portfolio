@@ -137,6 +137,7 @@ import { CinetechComponent } from './components/pages/realisations/cinetech/cine
         InovComponent,
         MatmoicaComponent,
         CinetechComponent
+        
     ],
     imports: [
         BrowserModule,
