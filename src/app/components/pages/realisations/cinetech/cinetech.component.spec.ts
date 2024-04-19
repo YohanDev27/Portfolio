@@ -2,7 +2,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { CinetechComponent } from './cinetech.component';
 
-describe('CinetechComponent', () => {
+describe('mainComponent', () => {
   let component: CinetechComponent;
   let fixture: ComponentFixture<CinetechComponent>;
 
