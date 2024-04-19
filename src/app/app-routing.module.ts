@@ -114,7 +114,7 @@ const routes: Routes = [
     {path: 'competences/git', component: GitComponent},
     {path: 'competences/react-native', component: ReactNativeComponent},
     {path: 'competences/veille', component: VeilleComponent},
-    {path: 'realisations/bdd', component: BddComponent},
+    {path: 'competences/bdd', component: BddComponent},
     //Realisations
     {path: 'realisations/tenue-de-compte', component: TenueCompteComponent},
     {path: 'realisations/geco', component: GecoComponent},
