@@ -143,6 +143,22 @@
     right: 0;
     transition: all 0.33s ease-out 0s
 }
+.main-timeline .date-outer.LYCEE:before,
+.main-timeline .date-outer.LYCEE:after {
+    content: "";
+    background-image: url("../../../../assets/img/timeline/lycee.jpg");
+    background-size: cover;
+    width: 125px;
+    height: 125px;
+    margin: 0 auto;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: all 0.33s ease-out 0s
+}
+
 
 .main-timeline .date-outer.McDonald:before,
 .main-timeline .date-outer.McDonald:after {
