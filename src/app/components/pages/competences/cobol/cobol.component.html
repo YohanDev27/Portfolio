@@ -35,6 +35,11 @@
             <span class="middle-bar"></span>
             <span class="bottom-bar"></span>
         </div>
+        <style>
+            .center-text {
+                text-align: center;
+            }
+            </style>
 
         <section class="blog-details-area ptb-90 bg-0f1d22">
             <div class="container">
@@ -82,11 +87,22 @@
                                 <p>Mon stage chez CGI a été une immersion fascinante dans le monde de la programmation <b>COBOL</b>, avec un accent particulier sur les applications bancaires. Cette expérience m'a offert une plateforme exceptionnelle pour développer mes compétences en <b>COBOL</b>, un langage clé dans le secteur financier.</p>
 
                                
-                                <p>L'un des aspects les plus enrichissants de ce stage a été le développement de divers programmes en <b>COBOL</b>, chacun présentant ses propres défis et objectifs. Un projet particulièrement marquant concernait la mise en place d'une limite de transaction, ou 'plancher', basée sur les numéros de compte des clients. Cette tâche a nécessité une compréhension approfondie des spécificités de <b>COBOL</b>, en particulier en ce qui concerne la synchronisation sur les variables des numéros de compte. Trouver une solution efficace pour déterminer ces limites a été un défi stimulant, mais également une occasion d'approfondir ma compréhension pratique du langage.
+                                <p>L'un des aspects les plus enrichissants de ce stage a été le développement de divers programmes en <b>COBOL</b>, chacun présentant ses propres défis et objectifs.
                                 </p>
-
-                           
-                
+                                <p>Pour coder en Cobol, j’utilise l’IDE UDC (Eclipse), qui me permet de rédiger des lignes de code, de récupérer des programmes existants sous Endevor, d’ajouter des programmes à Endevor, de déboguer, etc. UDC n’est pas le seul outil pour coder en Cobol ; il est assez récent. La plupart des développeurs Cobol ont codé sous Pacbase. </p>
+                                <p class="center-text"><u>(Pacbase)</u></p>
+                                <div class="services-details-image">
+                                    <img src="assets/img/competence/pacbase.png" alt="image">
+                                </div>
+                                    <p>Pacbase est un ancien outil abandonné par IBM. Développer sur Pacbase est très différent de coder avec UDC, qui utilise du Cobol natif pur (version originelle) et est bien plus moderne dans son aspect physique. En raison de son visuel très vieillot, il est très difficile pour nous, les “nouveaux” développeurs, de comprendre quoi que ce soit. De plus, il est assez difficile de naviguer dans celui-ci, car tout se fait via des commandes.</p> 
+                                <p>Un projet particulièrement marquant concernait la mise en place d'une limite de transaction, ou 'plancher', basée sur les numéros de compte des clients. Cette tâche a nécessité une compréhension approfondie des spécificités de COBOL, en particulier en ce qui concerne la synchronisation des variables des numéros de compte.</p>
+                               
+                                <ul class="features-list">
+                                    <li><i class="ri-check-double-fill"></i> <b>Problème :</b>  J’ai rencontré pas mal de difficultés au niveau de la technicité du programme. Il utilisait ce qu’on appelle des “points d’entrée”. Les points d’entrée sont des fonctions que l’on appelle dans notre programme en remplissant les paramètres selon nos besoins. Ces points d’entrée sont gérés par une autre ESN concurrente de CGI, et ils servent à interagir avec leur base de données MA (base de données du client) qu’utilise notre client. En tant que membre de CGI, nous ne pouvons communiquer avec MA qu’uniquement à l’aide de ces points d’entrée. La difficulté de cet exercice était qu’une erreur survenait lors de l’exécution de mon programme sur mon JCL(Le jcl permet de charger les fichier en entrée et de définir des steps comme par exemple des tries etc...), et cette erreur ne venait pas de moi, mais directement de MA.</li>
+                                    <li><i class="ri-check-double-fill"></i> <b>Solution :</b> Ma tutrice de stage, Sylvie Legrand, a signalé l’erreur à notre client, qui à son tour a fait remonter l’information à l’entreprise qui gère la base de données MA.</li>
+                                  
+                                </ul>
+                               
 
                                 <h3>Maîtrise</h3>
                                 <p>Au cours d'une année dédiée à travailler en <b>COBOL</b>, j'estime avoir acquis un niveau de compétence intermédiaire dans ce langage. Mes débuts avec <b>COBOL</b> ont été nettement plus ardus par rapport à mes expériences avec des langages plus modernes tels que Java, C#, ou PHP. L'une des difficultés notables résidait dans le manque d'une communauté active en ligne, un atout majeur pour les langages contemporains, ce qui rend l'apprentissage et la résolution de problèmes en <b>COBOL</b> plus isolants et exigeants.
